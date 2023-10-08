@@ -81,3 +81,22 @@ h2 {
 .boxMatch::after {
     transform: rotateY(180deg);
 }
+
+@media(max-width: 375px) {
+    h2{
+        width: 80%;
+        text-align: center;
+    }
+    .game {
+        justify-content: center;
+
+    }
+    .item{
+        width: 80px;
+        height: 80px;
+    }
+    .reset{
+        width: 80%;
+
+    }
+}
