@@ -36,7 +36,7 @@ for (let i=0; i < imagens.length; i++) {
 }
 
 function handleClick() {
-    if (openCards.length < 2) {
+    if (openCards.length < 2 && !this.classList.contains("boxOpen")) {
         this.classList.add("boxOpen")
         openCards.push(this)
     }
@@ -55,11 +55,11 @@ function checkMatch() {
         openCards[1].classList.remove("boxOpen")
     }
     openCards=[]
+    if (document.querySelectorAll(".boxMatch").length === imagens.length ){
+        alert("You Win! Perfect!!!")
+    }
 }
 
-if (document.querySelectorAll(".boxMatch").length === imagens.length ){
-    alert("Você venceu!")
-}
 
 const music = document.querySelector("#bgm")
 music.volume = 0.04
