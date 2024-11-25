@@ -82,7 +82,14 @@ h2 {
     transform: rotateY(180deg);
 }
 
-@media(max-width: 375px) {
+
+@media(max-width: 605px){
+    h2{
+        font-size: 2.5em;
+    }
+}
+
+@media(max-width: 464px) {
     h2{
         width: 80%;
         text-align: center;
@@ -97,6 +104,21 @@ h2 {
     }
     .reset{
         width: 80%;
+
+    }
+}
+
+@media(max-width: 370px) {
+    .game{
+        width: 100%;
+        gap: 5px;
+    }
+    .item{
+        width: calc(25% - 5px);
+        height: calc(25% - 5px);
+    }
+    .reset{
+        width: 70%;
 
     }
 }
